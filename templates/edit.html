@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}edit{% endblock title %}
+{% block main %}
+<div class="container-fluid">
+  <form action="{{ url_for('edit', task_id=task_id) }}" method="post">
+    <!-- Here when the button will be created task id will be post to edit route. so here the action is a littile bit different than the normal add task form. -->
+    {{ form.csrf_token }}
+    <div class="row">
+      <h3>Edit Task</h3>
+      <div class="col">
+        {{ form.title(class="form-control") }}
+      </div>
+      <div class="col">
+        {{ form.submit(class="btn btn-primary") }}
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}
