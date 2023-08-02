@@ -1,4 +1,4 @@
-# MyTask - a Todo app made with Python flask
+# MyTask - A Todo app made with Python flask
 OBJECTIVE: SQLite database and SQLalchemy ORM are used with Flask with a main focus on performing CURD operations.  
 FEATURES - 
 1. Add Task.
